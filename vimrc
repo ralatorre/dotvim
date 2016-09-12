@@ -1,6 +1,16 @@
-execute pathogen#infect()
+call pathogen#runtime_append_alL_bundles()
+call pathogen#helptags()
+
+set hidden
+set number
+set vb t_vb=
+set ts=2 sts=2 sw=2 expandtab
 syntax on
-filetype plugin indent on
+command! Status echo "All systems are go!"
+
+if has("autocmd")
+	filetype plugin indent on
+endif
 
 " vim-javascript
 let g:javascript_plugin_jsdoc = 1
