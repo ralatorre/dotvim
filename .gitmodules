@@ -14,3 +14,6 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 	ignore = dirty
+[submodule "bundle/vim-cpp-enhanced-highlight"]
+	path = bundle/vim-cpp-enhanced-highlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
