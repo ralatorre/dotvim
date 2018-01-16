@@ -31,4 +31,5 @@ map <C-n> :NERDTreeToggle<CR>
 " Close vim if NERDTree last buffer open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-
+" Get Code Issues and syntax errors
+let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
